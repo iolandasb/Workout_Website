@@ -1,0 +1,199 @@
+body {
+    font-family: 'Signika'; /*Essa linha foi retirada do site de fontes https://fonts.google.com/, o qual possui uma lista de fontes preparadas para web (existem fontes que não o são, mas não são adequadas). Lá é possível pegar os códigos HTML e CSS de uma fonte para aplicá-la na página da web.*/
+    line-height: 0; /*Altura da linha. Foi setada assim para tirar o espaçamento em branco que havia em relação ao "header", mas está sobrando*/
+} 
+
+header {
+    background: black; /*Cor de fundo*/
+    text-align: center; /*Alinhamento do texto*/
+    padding: 50px 0; /*Espaçamento interno*/
+}
+
+h1 {
+    color: white; /*Cor da letra*/
+    font-weight: bold; /*Negrito*/
+    font-size: 50px; /*Tamanho da letra*/
+}
+
+.banner {
+    display:block; /*O "block" bloqueia o conteúdo de uma linha, ou seja, não deixa que outros elementos a ocupem. Isso no entanto não é o comportamento padrão de imagens (que são "inline").*/
+    width: 100%; /*Largura*/
+}
+
+.fundo {
+    background:rgb(80, 80, 235); /*Cor de fundo*/
+    padding: 50px 0; /*Espaçamento interno*/
+    line-height: 15px; /*Altura da linha.*/
+}
+
+td {
+    border: 2px solid #9189fc; /*Tamanho e cor das bordas das células da tabela*/
+    width: 940px; /*Largura - Tamanho Padrão*/
+    margin: 0 auto; /*Espaçamento externo*/
+    padding: 50px 0; /*Espaçamento interno*/
+    font-weight: bold; /*Negrito*/
+}
+
+th {
+    border: 2px solid #9189fc; /*Tamanho e cor das bordas das células do cabeçalho da tabela*/
+    background: black; /*Cor de fundo*/
+    color: white; /*Cor da letra*/
+    font-weight: bold; /*Negrito*/
+    font-size: 20px; /*Tamanho da letra*/
+    width: 940px; /*Largura - Tamanho Padrão*/
+    margin: 0 auto; /*Espaçamento externo*/
+    padding: 50px 0; /*Espaçamento interno*/
+}
+
+tr {
+    transition:all .25s ease-in-out; /*Faz com que a mudança de um item (como de cor) ocorra de forma gradual. Aqui está sobrando. O "ease-in-out" é para que a transição ocorra lentamente tanto na entrada como na saída. O ".25s" é o tempo de transição.*/
+}
+
+td:hover { /*Identifia e altera o elemento quando o mouse passa por cima*/
+    border-color:#C78C19; /*Cor das bordas das células da tabela*/
+    font-size: 20px; /*Tamanho da letra*/
+    font-weight: bold; /*Negrito*/
+}
+
+td:active { /*Identifia e altera o elemento quando o mouse é clicado*/
+    border-color: #088C19; /*Cor das bordas das células da tabela*/
+}
+
+#tabela1 {
+    text-align: center; /*Alinhamento do texto*/
+    box-sizing: border-box; /*Com esse comando, o navegador entende que a largura será sempre o percentual de largura e que os pixels devem ocorrer apenas dentro da caixa, e não se somar à sua largura. Ou seja, essa definição já comporta borda, espaçamento interno (padding) e o conteúdo.*/
+}
+
+#tabela2 {
+    text-align: center; /*Alinhamento do texto*/
+    box-sizing: border-box; /*Com esse comando, o navegador entende que a largura será sempre o percentual de largura e que os pixels devem ocorrer apenas dentro da caixa, e não se somar à sua largura. Ou seja, essa definição já comporta borda, espaçamento interno (padding) e o conteúdo.*/
+}
+
+#botao1 {
+    display: block; /*O "block" bloqueia o conteúdo de uma linha, ou seja, não deixa que outros elementos a ocupem.*/
+    margin-left: 20px; /*Espaçamento externo*/
+    margin-right: 20px; /*Espaçamento externo*/
+    margin-bottom: 20px; /*Espaçamento externo*/
+    margin-top: 376px; /*Espaçamento externo*/
+    width: 200px; /*Largura*/
+	padding: .5em 2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+	border: 2px solid #9189fc; /*Tamanho e cor das bordas do botão*/
+    font-weight: bold; /*Negrito*/
+    font-size: 20px; /*Tamanho da letra*/
+    text-align: center; /*Alinhamento do texto*/
+	cursor: pointer; /*É o que cria a "mãozinha" quando clicamos no botão*/
+	color: white; /*Cor da letra*/
+	background-color: black; /*Cor de fundo*/
+    position: static; /*Posição do elemento. Se usou o "static" para que não houvesse grandes movimentações quando outros elementos fossem mudados de lugar*/
+}
+
+#botao2 {
+    display: block; /*O "block" bloqueia o conteúdo de uma linha, ou seja, não deixa que outros elementos a ocupem.*/
+    margin-left: 20px; /*Espaçamento externo*/
+    margin-right: 20px; /*Espaçamento externo*/
+    width: 200px; /*Largura*/
+	padding: .5em 2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+	border: 2px solid #9189fc; /*Tamanho e cor das bordas do botão*/
+    font-weight: bold; /*Negrito*/
+    font-size: 20px; /*Tamanho da letra*/
+    text-align: center; /*Alinhamento do texto*/
+	cursor: pointer; /*É o que cria a "mãozinha" quando clicamos no botão*/
+	color: white; /*Cor da letra*/
+	background-color: black; /*Cor de fundo*/
+    position: static; /*Posição do elemento. Se usou o "static" para que não houvesse grandes movimentações quando outros elementos fossem mudados de lugar*/
+}
+
+.titulo-principal {
+    text-align: center; /*Alinhamento do texto*/
+    font-weight: bold; /*Negrito*/
+    font-size: 2em; /*Tamanho da letra. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    margin: 0 0 1em; /*Espaçamento externo. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    clear: left;  /*Esse comando limpa a influência o "float" sobre essa classe, que no caso está em "left"*/
+}
+
+.principal, .principal2 {
+    background:rgb(80, 80, 235); /*Cor de fundo*/
+    padding: 3em 0; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    width: 940px; /*Largura - Tamanho Padrão*/
+    margin: 0 auto; /*Espaçamento externo*/
+}
+
+.principal2 {
+    text-align: left; /*Alinhamento do texto*/
+}
+
+.principal p, .principal2 p {
+    margin: 0 0 1em; /*Espaçamento externo. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+}
+
+.principal strong, .principal2 strong {
+    font-weight: bold; /*Negrito*/
+}
+
+.principal em, .principal2 em {
+    font-style: italic; /*Itálico*/
+}
+
+.peso {
+    width: 200px; /*Largura*/
+    float: left; /*"float" é uma forma de diagramação, que possui uma espécie de "sombra" sobre o bloco ou imagem, fazendo com que o texto não entre nessa "sombra".*/
+    margin: 0 20px 20px 0; /*Espaçamento externo*/
+}
+
+.infos-treinos {
+    background:rgb(80, 80, 235); /*Cor de fundo*/
+    text-align: center; /*Alinhamento do texto*/
+    font-size: 0.9em; /*Tamanho da letra. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    width: 940px; /*Largura - Tamanho Padrão*/
+    margin: 0 auto; /*Espaçamento externo*/
+}
+
+.treinos {
+    background:rgb(80, 80, 235); /*Cor de fundo*/
+    padding: 1.2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    display: flex; /*Torna a TAG um "flex container". Isso se refere ao alinhamento da tabela.*/
+    flex-direction: row; /*Determina a direção dos itens "flex". No caso, os deixa em uma linha/fileira.*/
+    justify-content: space-between; /*Cria um espaçamento igual entre os elementos "flex"*/
+    align-items: flex-start; /*Alinha os elementos "flex" no início da linha*/
+}
+
+#botaoTotal {
+    display: block; /*O "block" bloqueia o conteúdo de uma linha, ou seja, não deixa que outros elementos a ocupem.*/
+    margin-left: 960px; /*Espaçamento externo*/
+    margin-right: 20px; /*Espaçamento externo*/
+    width: 200px; /*Largura*/
+	padding: .5em 2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+	border: 2px solid #9189fc; /*Tamanho e cor das bordas do botão*/
+    font-weight: bold; /*Negrito*/
+    font-size: 20px; /*Tamanho da letra*/
+    text-align: center; /*Alinhamento do texto*/
+	cursor: pointer; /*É o que cria a "mãozinha" quando clicamos no botão*/
+	color: white; /*Cor da letra*/
+	background-color: black; /*Cor de fundo*/
+    position: static; /*Posição do elemento. Se usou o "static" para que não houvesse grandes movimentações quando outros elementos fossem mudados de lugar*/
+}
+
+#form-adiciona {
+    padding: 30px; /*Espaçamento interno. Aqui está sobrando*/
+    display: block; /*O "block" bloqueia o conteúdo de uma linha, ou seja, não deixa que outros elementos a ocupem.*/
+    margin-left: 740px; /*Espaçamento externo*/
+    margin-right: 20px; /*Espaçamento externo*/
+    margin-bottom: 20px; /*Espaçamento externo*/
+    width: 400px; /*Largura*/
+	padding: .5em 2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+    font-weight: bold; /*Negrito*/
+    font-size: 15px; /*Tamanho da letra*/
+    text-align: center; /*Alinhamento do texto*/
+	cursor: pointer; /*É o que cria a "mãozinha" quando clicamos no botão*/
+    position: static; /*Posição do elemento. Se usou o "static" para que não houvesse grandes movimentações quando outros elementos fossem mudados de lugar*/
+}
+
+#valor {
+    width: 100px; /*Largura*/
+	padding: .5em 2em; /*Espaçamento interno. No entanto aqui está como "em" para trabalhar melhor o espaçamento em relação à fonte.*/
+}
+
+footer {
+    background: black; /*Cor de fundo*/
+    padding: 50px 0; /*Espaçamento interno*/
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--Esse comando permite a adaptação da tela para o celular. O "viewport" também ajusta os pixels.-->
+
+        <title>Treinos</title>
+
+        <link rel="stylesheet" href="reset.css"> <!--Esse arquivo serve para limpar as configurações pré-definidas do navegador.-->
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet"> <!--Essa linha foi retirada do site de fontes de letras https://fonts.google.com/.-->
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>TREINO MONSTRÃO</h1>
+
+        </header>
+
+        <img class="banner" src="correndo.jpeg"> <!--Imagem retirada do banco de imagens https://br.freepik.com/.-->
+
+        <main class="fundo">
+
+            <section class="principal">
+
+                <h2 class="titulo-principal">O melhor treino do mundo!</h2>
+
+                <!--"alt" serve para melhorar a acessibilidade da imagem, fornecendo uma descrição caso não seja possível visualizá-la.-->
+                <img class="peso" src="peso.jpg" alt="Homem levantando peso."> <!--Imagem retirada do banco de imagens https://br.freepik.com/.-->
+
+                <p>Se os seus modelos de vida são o Holk, Geraldão de Rívia ou o Zangiefo, o <strong>Treino Monstrão</strong> foi feito para você!</p>
+
+                <p id="missao"><em>Nossa missão é te ajudar a ter os maiores e mais belos músculos que você já viu, baseado nos ensinamentos do famoso Mestre Saitama!</em></p>
+
+                <p>Bora botar essa camisa para suar! Seguindo os nossos treinos você vai começar a dizer "BIRLLLLLL" e a satisfação é garantida!</p>
+            
+            </section>
+
+            <section class="principal2">
+
+                <h2 class="titulo-principal">Descrição dos Treinos</h2>
+
+                <p><strong>Boneco de Posto:</strong> 100 Flexões - Você vai ficar com os bracinhos moles igual boneco de posto.</p>
+                <p><strong>Tanque Maldito:</strong> 100 Abdominais - Você vai até amaldiçoar a sua busca pelo tanquinho perfeito.</p>
+                <p><strong>Minhoca:</strong> 100 Agachamentos - Você vai ter que se arrastar igual uma minhoca depois desse exercício.</p>
+                <p><strong>Morto Vivo:</strong> Corrida de 10km - Tudo o que você vai conseguir fazer depois dessa corrida é gemer e andar quase caindo, igual um morto vivo.</p>
+                <p><strong>Encontro com Deus:</strong> 100 Burpees - A sua alma vai sair do seu corpo fazendo esse exercício, e você vai bater um papo com Deus.</p>
+
+            </section>
+
+            <section class="infos-treinos">
+
+                <h3 class="titulo-principal">Controle de Treinos</h3>
+                <p>Na tabela da esquerda, clique na caixa da coluna "Selecionar" do treino que realizou e depois no botão "Aplicar". Em seguida, marque quanto tempo (em minutos) você dedicou ao exercício na coluna "Tempo". Quando todos os exercícios estiverem inseridos, clique no botão "Tempo Total" e verifique o total de minutos do seu treino. Caso queira excluir algum treino, basta clicar na caixa da coluna "Selecionar" do treino em questão e clicar no botão "Excluir".</p>                
+
+            </section>
+
+            <section class="treinos">
+
+                <div>
+                
+                    <table  id="tabela1">
+                        <tr>
+                            <th>Treino</th>
+                            <th>Tempo</th>
+                            <th>Selecionar</th>
+                        </tr>
+                        <tr>
+                            <td id="tipo">Boneco de Posto</td>
+                            <td><input type="number" name="time"></td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr>
+                        <tr>  
+                            <td id="tipo">Tanque Maldito</td>
+                            <td><input type="number" name="time"></td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr>
+                        <tr>
+                            <td id="tipo">Minhoca</td> 
+                            <td><input type="number" name="time"></td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr> 
+                        <tr>
+                            <td id="tipo">Morto Vivo</td>
+                            <td><input type="number" name="time"></td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr> 
+                        <tr>
+                            <td id="tipo">Encontro com Deus</td>
+                            <td><input type="number" name="time"></td>
+                            <td><input type="checkbox" name="check"></td>
+                        </tr> 
+                    </table>
+
+                </div>
+
+                <div>
+
+                    <button onclick="transfereItemTabela();" id="botao1">Adicionar</button>
+                    <button onclick="devolveItemTabela();" id="botao2">Excluir</button>
+
+                </div>
+
+                <div>
+            
+                    <table id="tabela2">
+                        <tr>
+                            <th>Treino</th>
+                            <th>Tempo</th>
+                            <th>Selecionar</th>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </section>
+
+                <button onclick="somaTempo();" id="botaoTotal">Tempo Total</button>
+
+                <form id="form-adiciona"> <!--"form" é uma TAG de formulário que detém as entradas de dados do usuário.-->
+                    <div class="grupo">
+                        <label for="valor">Tempo de treino em minutos</label> <!--Etiqueta para o input de caixa de texto-->
+                        <input id="valor" name="valor" type="text" placeholder="Total" class="campo"> <!--Input de caixa de texto-->
+                    </div>
+
+        </main>
+
+        <span id="val"></span><!--"<span> serve para agrupar elementos quando não há uma semântica apropriada. Aqui no entanto está sobrando."-->
+
+        <script src="adiciona_item.js"></script>
+ 
+    </body>
+
+    <footer>
+
+    </footer>
+
+</html>
